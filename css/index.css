@@ -5,8 +5,9 @@ body {
     min-width  : 320px;
     margin     : 0 auto;
     font       : 14px;
-    font-family: -apple-system, Helvetica, sans-serif;
     color      : #333;
+    font-family: -apple-system, Helvetica, sans-serif;
+    overflow-x: hidden;
     line-height: 1.5em;
 }
 
@@ -35,6 +36,53 @@ a {
 div {
     box-sizing: border-box;
 }
+
+.download {
+    position          : fixed;
+    top               : 0;
+    left              : 0;
+    padding           : 0 10px;
+    width             : 100%;
+    background        : #ffffff;
+    height            : 48px;
+    z-index           : 10;
+    width             : 100%;
+    box-sizing        : border-box;
+    -webkit-box-sizing: border-box;
+    display           : flex;
+    align-items       : center;
+}
+
+/* 
+.download img {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.download p {
+    float: left;
+    padding: 0 8px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    flex: 1;
+}
+
+.download button {
+    right: 10px;
+    top: 12px;
+    padding: 0 9px;
+    color: #fff;
+    font-size: 14px;
+    background: #ff6600;
+    border-radius: 12px;
+    height: 24px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+} */
 
 .app {
     position: relative;
@@ -145,8 +193,8 @@ div {
     position             : relative;
     right                : 22px;
     width                : 100%;
-    margin               : 0 20px;
     height               : 32px;
+    margin               : 0 20px;
     color                : #aaa;
     font-size            : 12px;
     -webkit-border-radius: 5px;
@@ -293,7 +341,7 @@ div {
 
 .m-slider {
     position             : relative;
-    display: block;
+    display              : block;
     margin               : 0 20px;
     padding-top          : 20px;
     /* overflow          : hidden; */
@@ -321,84 +369,81 @@ div {
 
 .m-tool-list,
 .m-energy-list {
-    display: flex;
+    display   : flex;
     margin-top: 20px;
-    padding: 0 20px;
+    padding   : 20px 35px 0px;
 }
 
 .m-tool-list a {
-    display: block;
-    color: #333;
-    font-size: 12px;
+    display    : block;
+    color      : #333;
+    font-size  : 12px;
     line-height: 12px;
-    text-align: center;
-    flex: 1;
+    text-align : center;
+    flex       : 1;
 }
 
 .m-tool-list a img {
     display  : block;
     width    : 34px;
     height   : 34px;
+    margin   : 0 auto 10px;
     max-width: 100%;
-    margin   : 0 auto 5px;
 }
 
 .m-energy-list {
-    display: flex;
+    display   : flex;
     margin-top: 20px;
-    padding: 0 20px;
+    padding   : 0 20px;
 }
 
-.m-energy-list a:nth-child(1){
-    position: relative;
-    height: 60px;
-    overflow: hidden;
+.m-energy-list a {
+    position             : relative;
+    height               : 60px;
+    overflow             : hidden;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: url(../img/energy-list.jpg) no-repeat;
-    background-position: center;
-    background-size: 100%;
+    border-radius        : 5px;
 }
 
-.m-energy-list a:nth-child(2){
-    position: relative;
-    height: 60px;
-    overflow: hidden;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: url(../img/energy-list2.jpg) no-repeat;
-    background-position: center;
-    background-size: 100%;
+.m-energy-list a img {
+    width: 100%;
 }
 
-.m-energy-list a:nth-child(3){
-    position: relative;
-    height: 60px;
-    overflow: hidden;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: url(../img/energy-list3.png) no-repeat;
-    background-position: center;
-    background-size: 100%;
+.m-energy-list a span:nth-child(1) {
+    display    : block;
+    color      : #333;
+    font-size  : 14px;
+    line-height: 14px;
+    font-weight: 700;
+    margin     : 10px 0 7px 10px;
+}
+
+.m-energy-list a span:nth-child(2) {
+    position   : relative;
+    display    : block;
+    color      : #acb499;
+    font-size  : 10px;
+    line-height: 10px;
+    margin-left: 10px;
 }
 
 .m-swipe {
     display: flex;
-    margin: 10px 0 0;
+    margin : 10px 0 0;
 }
 
 .m-swipe a {
-    display: block;
-    color: #333;
+    display    : block;
+    color      : #333;
     line-height: 44px;
-    font-size: 16px;
-    text-align: center;
-    flex: 1;
+    font-size  : 16px;
+    text-align : center;
+    flex       : 1;
 }
 
 ul li {
     list-style: none;
-    padding: 0 20px;
+    padding   : 0 20px;
 }
 
 .news-tit {
@@ -406,19 +451,56 @@ ul li {
 }
 
 .m-list-tit {
-    max-height: 48px;
-    margin-top: -3px;
-    color: #333;
-    font-size: 17px;
+    max-height : 48px;
+    margin-top : -3px;
+    color      : #333;
+    font-size  : 17px;
     line-height: 24px;
-    overflow: hidden;
+    overflow   : hidden;
 }
 
 .news-tit img {
-    display: flex;
-    float: left;
-    flex: 1;
-    margin: 10px 0 20px;
+    display  : block;
+    float    : left;
+    flex     : 1;
+    width    : 32%;
+    max-width: 100%;
+    margin   : 10px 2px 20px;
 }
 
+.news-tit a:nth-child(3) {
+    margin: 0 2px;
+}
 
+.m-news div a {
+    display: block;
+    max-height : 48px;
+    margin-top : -3px;
+    color      : #333;
+    font-size  : 17px;
+    line-height: 24px;
+    overflow   : hidden;
+}
+
+.m-news div img {
+    float                : right;
+    display              : block;
+    width                : 32%;
+    overflow             : hidden;
+    -webkit-border-radius: 5px;
+    border-radius        : 5px;
+    margin               : 0 16px 0 10px;
+}
+
+.m-news div span {
+    position: relative;
+    display      : block;
+    top          : 100px;
+    height       : 16px;
+    color        : #999;
+    line-height  : 16px;
+    font-size    : 12px;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
