@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- 引入初始化css文件 -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- 引入首页css文件 -->
     <link rel="stylesheet" href="css/index.css">
-    <!-- <link rel="icon" href="img/LOGO.png"> -->
+
+    <link rel="icon" href="img/LOGO.png">
+
+    <!-- 引入swiper.css文件 -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- 引入swiper.js文件 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- 引入touchSlide.js文件 -->
+    <script src="js/TouchSlide.1.1.js"></script>
+    <!-- 引入index.js文件 -->
+    <script src="js/index.js"></script>
     <title>太平洋汽车网_精准报价_专业评测_汽车世界,由此精彩</title>
 </head>
 
@@ -42,7 +54,7 @@
 
     <!-- 头部导航 -->
     <div class="top-nav">
-        <div class="swipe">
+        <!-- <div class="swipe">
             <a href="">按品牌</a>
             <a href="">按价格</a>
             <a href="">按级别</a>
@@ -167,29 +179,85 @@
                 <a href="">宋Pro新能源</a>
                 <a href="">小鹏汽车</a>
             </div>
+        </div> -->
+
+
+        <!-- Tab新闻切换（高度自适应示范） -->
+        <div id="tabBox1" class="tabBox">
+            <div class="hd">
+                <h3><a href="#">新闻</a><span>News</span></h3>
+                <ul>
+                    <li><a href="javascript:void(0)">国内</a></li>
+                    <li><a href="javascript:void(0)">国际</a></li>
+                    <li><a href="javascript:void(0)">时事</a></li>
+                </ul>
+            </div>
+            <div class="bd" id="tabBox1-bd">
+                <div class="con">
+                    <!-- 高度自适应需添加外层 -->
+                    <ul>
+                        <li><a href="#">官方明确感染H7N9高危人群</a></li>
+                        <li><a href="#">台官员:将驱离进入钓岛大陆船</a></li>
+                        <li><a href="#">陈云长子吁学江泽民思想方法</a></li>
+                        <li><a href="#">央视批抗日剧目:比着俗争着二</a></li>
+                        <li><a href="#">网友:离3次结3次可避税国五条</a></li>
+                        <li><a href="#">足疗女子自称东北人引发血案</a></li>
+                        <li><a href="#">男性神秘“根浴”会所被调查</a></li>
+                        <li><a href="#">女孩一年吃掉48公里长方便面</a></li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <!-- 高度自适应需添加外层 -->
+                    <ul>
+                        <li><a href="#">日:沈阳军区部队开赴中朝边境</a></li>
+                        <li><a href="#">印度核潜艇经我周边未被发现</a></li>
+                        <li><a href="#">中国航母战斗群重防空轻反潜</a></li>
+                        <li><a href="#">日本军车爆车胎造成一死一伤</a></li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <!-- 高度自适应需添加外层 -->
+                    <ul>
+                        <li><a href="#">农业占GDP低政府支持力度大</a></li>
+                        <li><a href="#">林志玲:至今珍藏本山送的手绢</a></li>
+                        <li><a href="#">五粮液高管年薪超茅台近一倍</a></li>
+                        <li><a href="#">视频:朝鲜导弹反复出舱</a></li>
+                        <li><a href="#">《我是歌手》明晚决赛开战</a></li>
+                        <li><a href="#">皖新传媒一年花13亿委托理财</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 
     <!-- 轮播图 -->
     <div class="m-slider">
-        <div class="slider-wrap">
-            <ul>
-                <li>
-                    <a href="">
+        <!-- Swiper -->
+        <!-- 不要更改里面的结构与类名 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
                         <img src="./img/slider-focus.jpg" alt="">
                     </a>
-                </li>
-                <!-- <li>
-                    <a href="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
                         <img src="./img/slider-focus2.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
                         <img src="./img/slider-focus3.jpg" alt="">
                     </a>
-                </li> -->
-            </ul>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 

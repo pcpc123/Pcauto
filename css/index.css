@@ -7,7 +7,7 @@ body {
     font       : 14px;
     color      : #333;
     font-family: -apple-system, Helvetica, sans-serif;
-    overflow-x: hidden;
+    overflow-x : hidden;
     line-height: 1.5em;
 }
 
@@ -349,18 +349,92 @@ div {
     border-radius        : 5px;
 }
 
-.slider-wrap {
-    float   : left;
-    display : block;
-    /* width: 700%; */
-    overflow: hidden;
+.m-slider img {
+    width: 100%;
 }
 
-.m-slider ul li img {
-    display: block;
-    width  : 100%;
+.swiper-container {
+    width : 100%;
+    height: 100%;
+
 }
 
+.swiper-slide {
+    text-align: center;
+    font-size : 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
+}
+
+.tabBox {
+    margin: 10px auto;
+}
+
+.tabBox .hd {
+    height     : 40px;
+    line-height: 40px;
+    font-size  : 20px;
+    overflow   : hidden;
+    background : #eee;
+    border-top : 1px solid #ccc;
+    padding    : 0 10px;
+}
+
+.tabBox .hd h3 {
+    float    : left;
+    font-size: 24px;
+}
+
+.tabBox .hd h3 span {
+    color      : #ccc;
+    font-family: Georgia;
+    margin-left: 10px;
+}
+
+.tabBox .hd ul {
+    float: right;
+}
+
+.tabBox .hd ul li {
+    float         : left;
+    padding       : 0 5px;
+    vertical-align: top;
+}
+
+.tabBox .hd ul li.on a {
+    color        : #B63B34;
+    display      : block;
+    height       : 38px;
+    line-height  : 38px;
+    border-bottom: 2px solid #B63B34;
+}
+
+.tabBox .bd ul {
+    padding: 10px;
+}
+
+.tabBox .bd ul li {
+    border-bottom: 1px dotted #ddd;
+}
+
+.tabBox .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 去掉链接触摸高亮 */
 
 .m-tool {
     width     : 100%;
@@ -473,7 +547,7 @@ ul li {
 }
 
 .m-news div a {
-    display: block;
+    display    : block;
     max-height : 48px;
     margin-top : -3px;
     color      : #333;
@@ -493,7 +567,7 @@ ul li {
 }
 
 .m-news div span {
-    position: relative;
+    position     : relative;
     display      : block;
     top          : 100px;
     height       : 16px;
